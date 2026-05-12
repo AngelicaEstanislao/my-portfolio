@@ -7,10 +7,10 @@
  font-family: 'Poppins';
 }
 :root {
---bg-color: #1b1b1b;
---second-bg-color: #2c2c2c;
+--bg-color: #050505;
+--second-bg-color: #131313;
 --text-color: #fff;
---main-color: #ff3c78;
+--main-color: rgb(197, 9, 197);
 }
 html {
  font-size: 62.5%;
@@ -77,4 +77,7 @@ span{
  color: white;
  border: none;
  text-wrap: nowrap;
+}
+.gradient-btn:hover{
+ transform: scale(1.05);
 }
