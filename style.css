@@ -26,7 +26,7 @@ body {
  left: 0;
  width: 100%;
  background: black;
- padding: 2rem 10%;
+ padding: 4rem 15%;
  backdrop-filter: blur(10px);
  display: flex;
  justify-content: space-between;
@@ -44,6 +44,7 @@ body {
  font-weight: 800;
  cursor: pointer;
  transition: 0.3s ease-in-out;
+ 
 }
 .logo:hover{
  transform: scale(1.1);
@@ -64,4 +65,16 @@ span{
 .navbar a:hover{
  color: var(--main-color);
  border-bottom: 3px solid var(--main-color);
+}
+.gradient-btn{
+ font-size: 1.8rem;
+ padding: 1rem 2rem;
+ border-radius: 3rem;
+ background: linear-gradient(270deg, rgb(110, 0, 110) 10%, rgb(197, 9, 197) 100%);
+ letter-spacing: 1px;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+ color: white;
+ border: none;
+ text-wrap: nowrap;
 }
