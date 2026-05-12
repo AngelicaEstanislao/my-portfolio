@@ -28,5 +28,40 @@ body {
  background: black;
  padding: 2rem 10%;
  backdrop-filter: blur(10px);
- 
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 1000;
+}
+#menu-icon{
+ font-size: 3.5rem;
+ color: var(--main-color);
+ display: none;
+}
+.logo{
+ font-size: 3rem;
+ color: var(--text-color);
+ font-weight: 800;
+ cursor: pointer;
+ transition: 0.3s ease-in-out;
+}
+.logo:hover{
+ transform: scale(1.1);
+}
+span{
+ background: linear-gradient(270deg, rgb(110, 0, 110) 10%, rgb(197, 9, 197) 100%);
+ background-clip: text;
+ color: transparent;
+}
+.navbar a{
+ font-size: 1.8rem;
+ color: var(--text-color);
+ margin-left: 4rem;
+ font-weight: 500;
+ transition: 0.3s ease-in-out;
+ border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+ color: var(--main-color);
+ border-bottom: 3px solid var(--main-color);
 }
