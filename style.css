@@ -1,0 +1,32 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ scroll-behavior: smooth;
+ font-family: 'Poppins';
+}
+:root {
+--bg-color: #1b1b1b;
+--second-bg-color: #2c2c2c;
+--text-color: #fff;
+--main-color: #ff3c78;
+}
+html {
+ font-size: 62.5%;
+ overflow-x: hidden;
+}
+body {
+ background-color: var(--bg-color);
+ color: var(--text-color);
+}
+.header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background: black;
+ padding: 2rem 10%;
+ backdrop-filter: blur(10px);
+ 
+}
