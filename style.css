@@ -278,6 +278,9 @@ section{
     overflow: hidden;
     transition: 0.3s ease-in-out;
     border: 2px solid transparent;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 .project-card:hover{
