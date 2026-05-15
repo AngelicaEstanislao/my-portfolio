@@ -278,26 +278,27 @@
         </div>
 
         <!-- RIGHT SIDE -->
-        <form class="contact-form">
+        <form name="contact"
+      method="POST"
+      data-netlify="true"
+      class="contact-form">
 
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-            </div>
+    <input type="hidden" name="form-name" value="contact">
 
-            <textarea
-                cols="30"
-                rows="10"
-                placeholder="Your Message">
-            </textarea>
-
-            <button type="submit" class="btn">
-                Send Message
-            </button>
-
-        </form>
-
+    <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
     </div>
+
+    <textarea name="message"
+              placeholder="Your Message"
+              required></textarea>
+
+    <button type="submit" class="btn">
+        Send Message
+    </button>
+
+</form>
 
 </section>
     
