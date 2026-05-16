@@ -10,6 +10,31 @@
     <link href = 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init("0Zf2UVUprSI7QxEXS");
+
+document.getElementById("contact-form")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    emailjs.sendForm(
+        "Angelica",
+        "r16279b",
+        this
+    )
+    .then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message.");
+        console.log(error);
+    });
+
+});
+</script>
+
 <body>
   <header class ="header">
 
@@ -278,15 +303,11 @@
         </div>
 
         <!-- RIGHT SIDE -->
-        <form name="contact"
-      method="POST"
-      data-netlify="true"
-      class="contact-form">
-
-    <input type="hidden" name="form-name" value="contact">
+        <form class="contact-form" id="contact-form">
 
     <div class="input-box">
         <input type="text" name="name" placeholder="Full Name" required>
+
         <input type="email" name="email" placeholder="Email" required>
     </div>
 
